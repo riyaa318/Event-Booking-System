@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(135deg, #1c1b1c, #1a1a1b, #383738);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn:hover {
+  background-color: #ff6347;
+  transform: scale(1.05);
+  transition: transform 0.3s, background-color 0.3s;
+}
