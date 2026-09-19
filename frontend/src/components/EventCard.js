@@ -54,7 +54,6 @@ function EventCard({ event }) {
     },
   };
 
-  const isAvailable = event.available_seats > 0;
   const isFewLeft = event.available_seats > 0 && event.available_seats <= 10;
   const isSoldOut = event.available_seats === 0;
 
