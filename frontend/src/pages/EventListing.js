@@ -96,7 +96,7 @@ const EventListing = () => {
             available_seats: 8,
           },
         ]);
-      } finally {
+      } finally {   
         setLoading(false);
       }
     };

@@ -65,7 +65,7 @@ const BookingPage = () => {
       navigate("/events");
     } catch (err) {
       console.error("Booking error:", err);
-      alert(err.response?.data?.message || "Booking failed. Please try again.");
+      alert(err.response?.data?.message || "Booking Failed"); 
     } finally {
       setBookingLoading(false);
     }
